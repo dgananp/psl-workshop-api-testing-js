@@ -34,11 +34,11 @@ describe('First Api Tests',() =>{
         };
 
         return agent
-        .post('https://httpbin.org/post')                                        
-        .send(body)
-        .then((response) => {
-            expect(response.status).to.equal(statusCode.OK);
-            expect(response.body.json).to.eql(body);
+            .post('https://httpbin.org/post')                                        
+            .send(body)
+            .then((response) => {
+                expect(response.status).to.equal(statusCode.OK);
+                expect(response.body.json).to.eql(body);
         });
     });
 
@@ -59,11 +59,11 @@ describe('First Api Tests',() =>{
         };
 
         return agent
-        .put('https://httpbin.org/put')                                        
-        .send(body)
-        .then((response) => {
-            expect(response.status).to.equal(statusCode.OK);
-            expect(response.body.json).to.eql(body);
+            .put('https://httpbin.org/put')                                        
+            .send(body)
+            .then((response) => {
+                expect(response.status).to.equal(statusCode.OK);
+                expect(response.body.json).to.eql(body);
         });
     });
 
@@ -75,11 +75,11 @@ describe('First Api Tests',() =>{
         };
 
         return agent
-        .del('https://httpbin.org/delete')                                        
-        .send(body)
-        .then((response) => {
-            expect(response.status).to.equal(statusCode.OK);
-            expect(response.body.json).to.eql(body);
+            .del('https://httpbin.org/delete')                                        
+            .send(body)
+            .then((response) => {
+                expect(response.status).to.equal(statusCode.OK);
+                expect(response.body.json).to.eql(body);
         });
     });
 
@@ -91,13 +91,11 @@ describe('First Api Tests',() =>{
         };
 
         return agent
-        .patch('https://httpbin.org/patch')                                        
-        .send(body)
-        .then((response) => {
-            expect(response.status).to.equal(statusCode.OK);
-            expect(response.body.json).to.eql(body);
+            .patch('https://httpbin.org/patch')                                        
+            .send(body)
+            .then((response) => {
+                expect(response.status).to.equal(statusCode.OK);
+                expect(response.body.json).to.eql(body);
         });
     });
-
-
 });
